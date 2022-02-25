@@ -33,9 +33,6 @@ fetch(weatherdata).then((api)=>{
     
     return api.json()
 }).then((weatherapi)=>{
-    console.log(weatherapi);
-
-
     const currentTemp = Math.round(weatherapi.main.temp)
     const cityName = weatherapi.name
     const currentWeather = weatherapi.weather[0].description
